@@ -1,4 +1,4 @@
-## Under construction...
+### Under Construction...
 ---
 
 # Cross-Image Contrastive Decoding: Precise, Lossless Suppression of Language Priors in Large Vision-Language Models
@@ -22,6 +22,15 @@ All benchmarks need to be processed into structurally consistent JSON files.
 
 Some samples could be found in `data/samples.json`.
 
+You can use `preprocess.py` to build data:
+```bash
+python preprocess.py \
+--image_file /path/to/images \
+--data_file /path/to/data.json \
+--output_file /path \
+--retrieve False
+```
+
 
 ## Evaluate CICD
 
@@ -40,7 +49,6 @@ python ./eval/object_hallucination_vqa_${model_name}.py \
 --question-file /path/to/test.json \
 --image-folder /path \
 --answers-file /path/to/results.json
-
 ```
 
 **Evaluation**
@@ -51,6 +59,4 @@ python eval_pope.py --ans_folder path/to/results.json
 # CHAIR
 python test_chair.py --cap_file ../path/to/results.json --coco_path /path/to/coco
 ```
-
 AMBER and DetailCaps has its own evaluation method; please refer the official repositories for result evaluation:  [AMBER](https://github.com/junyangwang0410/AMBER), [DetailCaps](https://github.com/foundation-multimodal-models/CAPTURE?tab=readme-ov-file)
-
