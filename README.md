@@ -1,4 +1,5 @@
-Under construction...
+## Under construction...
+---
 
 # Cross-Image Contrastive Decoding: Precise, Lossless Suppression of Language Priors in Large Vision-Language Models
 
@@ -52,3 +53,4 @@ python test_chair.py --cap_file ../path/to/results.json --coco_path /path/to/coc
 ```
 
 AMBER and DetailCaps has its own evaluation method; please refer the official repositories for result evaluation:  [AMBER](https://github.com/junyangwang0410/AMBER), [DetailCaps](https://github.com/foundation-multimodal-models/CAPTURE?tab=readme-ov-file)
+
